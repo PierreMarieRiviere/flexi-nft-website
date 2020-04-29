@@ -2,6 +2,6 @@
   functions = "functions"
 
 [[redirects]]
-  from = ":tokenId"
+  from = "/metadata/:tokenId"
   to = "/.netlify/functions/metadata?tokenId=:tokenId"
   status = 200
