@@ -4,7 +4,7 @@ exports.handler = function(event, context, callback) {
   const tokenId = event.queryStringParameters.tokenId
   const metadata =  {
     // both opensea and rarebits
-    "name": "Token #" + tokenId,
+    "name": "BrandoToken #" + tokenId,
     "description": "This is a basic NFT with token Id #" + tokenId,
 
     // opensea
@@ -20,7 +20,7 @@ exports.handler = function(event, context, callback) {
     // opensea
     "attributes": [
       {
-        "trait_type": "zodiac",
+        "trait_type": "wam",
         "value": returnZodiac(tokenId)
       }
     ],

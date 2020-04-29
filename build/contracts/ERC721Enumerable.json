@@ -1622,7 +1622,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2321,
+                        "referencedDeclaration": 2315,
                         "src": "3259:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1824",
@@ -1965,7 +1965,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2321,
+                        "referencedDeclaration": 2315,
                         "src": "3733:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1824",
@@ -2264,7 +2264,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2321,
+                        "referencedDeclaration": 2315,
                         "src": "4207:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1824",
@@ -5828,7 +5828,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2321,
+                        "referencedDeclaration": 2315,
                         "src": "3259:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1824",
@@ -6171,7 +6171,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2321,
+                        "referencedDeclaration": 2315,
                         "src": "3733:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1824",
@@ -6470,7 +6470,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2321,
+                        "referencedDeclaration": 2315,
                         "src": "4207:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Enumerable_$1824",
@@ -8800,7 +8800,7 @@
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-29T07:50:10.448Z",
+  "updatedAt": "2020-04-29T10:14:15.704Z",
   "devdoc": {
     "details": "See https://eips.ethereum.org/EIPS/eip-721",
     "methods": {

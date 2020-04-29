@@ -2181,7 +2181,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2325,
+                        "referencedDeclaration": 2319,
                         "src": "3835:5:13",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Metadata_$2021",
@@ -4297,7 +4297,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2325,
+                        "referencedDeclaration": 2319,
                         "src": "3835:5:13",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_ERC721Metadata_$2021",
@@ -4635,7 +4635,7 @@
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-04-29T07:50:10.459Z",
+  "updatedAt": "2020-04-29T10:14:15.710Z",
   "devdoc": {
     "methods": {
       "approve(address,uint256)": {

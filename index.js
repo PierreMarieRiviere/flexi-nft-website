@@ -1,5 +1,5 @@
-var Token = require('./build/contracts/Token.json')
+var BrandoToken = require('./build/contracts/BrandoToken.json')
 
 module.exports = {
-  Token: Token
+  BrandoToken: BrandoToken
 }

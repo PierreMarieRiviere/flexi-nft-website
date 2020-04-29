@@ -1364,7 +1364,7 @@ library strings {
 
 pragma solidity ^0.5.0;
 /**
-* Metadata contract is upgradeable and returns metadata about Token
+* Metadata contract is upgradeable and returns metadata about BrandoToken
 */
 
 
@@ -1401,7 +1401,7 @@ contract Metadata {
     }
 }
 
-// File: contracts/Token.sol
+// File: contracts/BrandoToken.sol
 
 pragma solidity ^0.5.0;
 
@@ -1409,9 +1409,9 @@ pragma solidity ^0.5.0;
 
 
 /**
- * The Token contract does this and that...
+ * The BrandoToken contract does this and that...
  */
-contract Token is ERC721Full, Ownable {
+contract BrandoToken is ERC721Full, Ownable {
     address public metadata;
     constructor(string memory name, string memory symbol, address _metadata) public ERC721Full(name, symbol) {
         metadata = _metadata;

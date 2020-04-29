@@ -4,9 +4,9 @@ import "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol";
 import "./Metadata.sol";
 
 /**
- * The Token contract does this and that...
+ * The BrandoToken contract does this and that...
  */
-contract Token is ERC721Full, Ownable {
+contract BrandoToken is ERC721Full, Ownable {
     address public metadata;
     constructor(string memory name, string memory symbol, address _metadata) public ERC721Full(name, symbol) {
         metadata = _metadata;

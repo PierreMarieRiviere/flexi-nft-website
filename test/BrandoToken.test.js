@@ -1,11 +1,11 @@
 var Metadata = artifacts.require('./Metadata.sol')
-var Token = artifacts.require('./Token.sol')
+var BrandoToken = artifacts.require('./BrandoToken.sol')
 var BigNumber = require('bignumber.js')
 let gasPrice = 1000000000 // 1GWEI
 
 let _ = '        '
 
-contract('Token', async function(accounts) {
+contract('BrandoToken', async function(accounts) {
   let token, metadata
 
   before(done => {
@@ -20,12 +20,12 @@ contract('Token', async function(accounts) {
         console.log(_ + tx.gasUsed + ' - Deploy Metadata')
         metadata = await Metadata.deployed()
 
-        // Deploy Token.sol
-        token = await Token.new("Token", "TKN", metadata.address)
+        // Deploy BrandoToken.sol
+        token = await BrandoToken.new("BrandoToken", "TKN", metadata.address)
         var tx = await web3.eth.getTransactionReceipt(token.transactionHash)
         totalGas = totalGas.plus(tx.gasUsed)
-        console.log(_ + tx.gasUsed + ' - Deploy Token')
-        token = await Token.deployed()
+        console.log(_ + tx.gasUsed + ' - Deploy BrandoToken')
+        token = await BrandoToken.deployed()
 
         console.log(_ + '-----------------------')
         console.log(_ + totalGas.toFormat(0) + ' - Total Gas')
@@ -37,7 +37,7 @@ contract('Token', async function(accounts) {
     })()
   })
 
-  describe('Token.sol', function() {
+  describe('BrandoToken.sol', function() {
     it('should return metadata uints as strings', async function() {
       const URI = 'https://flexi-nft.netlify.app/metadata/'
   
@@ -82,7 +82,7 @@ contract('Token', async function(accounts) {
     let tokenId = await token.tokenOfOwnerByIndex(accounts[0], "0")
     assert(
       tokenId.toString(10) === '1',
-      "Token at index 0 is " + tokenId.toString(10)
+      "BrandoToken at index 0 is " + tokenId.toString(10)
     )
   })
 })

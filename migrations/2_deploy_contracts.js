@@ -1,5 +1,5 @@
 var Metadata = artifacts.require('./Metadata.sol')
-var Token = artifacts.require('./Token.sol')
+var BrandoToken = artifacts.require('./BrandoToken.sol')
 
 let _ = '        '
 
@@ -12,10 +12,10 @@ module.exports = (deployer, helper, accounts) => {
       let metadata = await Metadata.deployed()
       console.log(_ + 'Metadata deployed at: ' + metadata.address)
 
-     // Deploy Token.sol
-      await deployer.deploy(Token, 'Token Name', 'Token Symbol', metadata.address)
-      let token = await Token.deployed()
-      console.log(_ + 'Token deployed at: ' + token.address)
+     // Deploy BrandoToken.sol
+      await deployer.deploy(BrandoToken, 'BrandoToken Name', 'BrandoToken Symbol', metadata.address)
+      let token = await BrandoToken.deployed()
+      console.log(_ + 'BrandoToken deployed at: ' + token.address)
 
     } catch (error) {
       console.log(error)

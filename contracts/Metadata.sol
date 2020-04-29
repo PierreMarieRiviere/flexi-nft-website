@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 /**
-* Metadata contract is upgradeable and returns metadata about Token
+* Metadata contract is upgradeable and returns metadata about BrandoToken
 */
 
 import "./helpers/strings.sol";
