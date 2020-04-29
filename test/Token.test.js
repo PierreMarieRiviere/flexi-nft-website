@@ -39,7 +39,7 @@ contract('Token', async function(accounts) {
 
   describe('Token.sol', function() {
     it('should return metadata uints as strings', async function() {
-      const URI = 'https://domain.com/metadata/'
+      const URI = 'https://flexi-nft.netlify.app/metadata/'
   
       let tokenURI_uint = 12
       let tokenURI_result = await token.tokenURI(tokenURI_uint)
@@ -49,7 +49,7 @@ contract('Token', async function(accounts) {
       )
    })
   })
-/*
+
   it('should mint a token from the owner account', async function() {
     // begin with zero balance
     let zeroBalance = await token.totalSupply()
@@ -84,5 +84,5 @@ contract('Token', async function(accounts) {
       tokenId.toString(10) === '1',
       "Token at index 0 is " + tokenId.toString(10)
     )
-  })*/
+  })
 })
